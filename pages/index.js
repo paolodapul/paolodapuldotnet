@@ -3,12 +3,9 @@ import path from 'path';
 import matter from 'gray-matter';
 import Head from 'next/head';
 import Post from '@components/Post';
+import { sortByDate, getPostKey } from '../utils';
 
 export default function Home({ posts }) {
-  const getPostKey = (title) => {
-    return title.replace(' ', '-');
-  };
-
   return (
     <div>
       <Head>

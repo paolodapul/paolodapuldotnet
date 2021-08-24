@@ -5,7 +5,10 @@ export default function Header() {
     <header>
       <div className="container">
         <Link href="/" passHref>
-          <h2>Blog Title</h2>
+          <a>
+            <div>Paolo Dapul</div>
+            <div>Musings and Learnings</div>
+          </a>
         </Link>
       </div>
     </header>

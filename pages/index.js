@@ -17,7 +17,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="posts">
-        {posts.map((post, index) => (
+        {posts.map((post) => (
           <Post key={getPostKey(post.frontMatter.title)} post={post} />
         ))}
       </div>

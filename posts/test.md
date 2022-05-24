@@ -1,7 +1,7 @@
 ---
-title: 'JavaScript Design Patterns Part 1'
+title: 'Enterprise TypeScript Part 1'
 date: 'Aug 22 2021'
-excerpt: 'This is the excerpt'
+excerpt: 'React makes it painless to create interactive UIs. Design simple views.'
 ---
 
 ## Heading Two

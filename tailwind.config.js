@@ -1,15 +1,22 @@
 const colors = require('tailwindcss/colors');
+
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
-    colors: {
-      gray: colors.blueGray,
+    extend: {
+      fontFamily: {
+        heebo_bold: ["Heebo-Bold", "sans-serif"],
+        heebo_medium: ["Heebo-Medium", "sans-serif"],
+        heebo_regular: ["Heebo-Regular", "sans-serif"],
+        heebo_light: ["Heebo-Light", "sans-serif"],
+        heebo_extralight: ["Heebo-ExtraLight", "sans-serif"],
+      }
     },
-    extend: {},
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

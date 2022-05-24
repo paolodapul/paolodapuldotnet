@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Heebo-Bold";
+  src: url("../public/fonts/Heebo-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Heebo-Medium";
+  src: url("../public/fonts/Heebo-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Heebo-Regular";
+  src: url("../public/fonts/Heebo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Heebo-Light";
+  src: url("../public/fonts/Heebo-Light.ttf");
+}
+
+@font-face {
+  font-family: "Heebo-ExtraLight";
+  src: url("../public/fonts/Heebo-ExtraLight.ttf");
+}
+
+html,
+body {
+  @apply bg-slate-50;
+}

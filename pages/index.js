@@ -9,8 +9,11 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Paolo Dapul | Musings and Learnings</title>
-        <meta name="description" content="Blog by Paolo Dapul." />
+        <title>Paolo Dapul</title>
+        <meta
+          name="description"
+          content="I write about programming and software development."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="posts">

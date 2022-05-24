@@ -1,14 +1,14 @@
 import Header from '@components/Header';
-import 'tailwindcss/tailwind.css';
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Header className="container mx-auto lg:w-1/3 2xl:w-1/3" />
-      <main className="container mx-auto lg:w-1/3 2xl:w-1/3">
+    <div className='container my-16 mx-auto lg:w-2/5 2xl:w-2/5'>
+      <Header className="font-sans" />
+      <main>
         <Component {...pageProps} />
       </main>
-    </>
+    </div>
   );
 }
 

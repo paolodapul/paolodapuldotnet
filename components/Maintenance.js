@@ -10,7 +10,7 @@ export default function Maintenance() {
         to writing more posts regularly after that.
       </p>
       <p className="mb-2">
-        For correspondence, feel free to reach my on{' '}
+        For correspondence, feel free to reach me on{' '}
         <a
           href="https://www.linkedin.com/in/paolodapul/"
           target="_blank"

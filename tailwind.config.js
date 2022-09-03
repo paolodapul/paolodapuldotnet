@@ -13,6 +13,8 @@ module.exports = {
         heebo_regular: ["Heebo-Regular", "sans-serif"],
         heebo_light: ["Heebo-Light", "sans-serif"],
         heebo_extralight: ["Heebo-ExtraLight", "sans-serif"],
+        inter_regular: ["Inter-Regular", "sans-serif"],
+        inter_light: ["Inter-Light", "sans-serif"]
       }
     },
   },

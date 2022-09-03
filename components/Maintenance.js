@@ -1,16 +1,12 @@
 export default function Maintenance() {
   return (
-    <article className="prose text-slate-700 font-heebo_regular container my-48 mx-auto lg:w-2/5 2xl:w-2/5">
+    <article className="prose text-slate-700 font-inter_regular container px-10 my-48 md:mx-auto lg:mx-auto sm:w-2/5 lg:w-2/5 2xl:w-2/5 text-lg subpixel-antialiased">
       <p className="mb-2">
-        I have an ongoing redesign and re-development of this site, but this
-        will be back eventually. Something better will be up :)
+        I have an ongoing revamp of this site, but this
+        will be back eventually. Something better will be up. 👆🏼
       </p>
       <p className="mb-2">
-        Currently busy building a full stack side project, and I&apos;ll be back
-        to writing more posts regularly after that.
-      </p>
-      <p className="mb-2">
-        For correspondence, feel free to reach me on{' '}
+        For correspondence, feel free reaching out on{' '}
         <a
           href="https://www.linkedin.com/in/paolodapul/"
           target="_blank"
@@ -18,21 +14,12 @@ export default function Maintenance() {
         >
           LinkedIn
         </a>
-        ,{' '}
-        <a
-          href="https://twitter.com/paolodapul"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Twitter
-        </a>{' '}
-        or email -{' '}
-        <a href="mailto:paolodapultech@gmail.com">paolodapultech@gmail.com</a>.
+        , or <a href="mailto:paolodapultech@gmail.com">email</a>.
       </p>
       <p className="mb-2">
         Best, <br />
         Paolo
       </p>
     </article>
-  );
+  )
 }

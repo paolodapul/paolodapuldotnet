@@ -27,6 +27,16 @@
   src: url("../public/fonts/Heebo-ExtraLight.ttf");
 }
 
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../public/fonts/Inter-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url("../public/fonts/Inter-Light.woff2");
+}
+
 html,
 body {
   @apply bg-slate-50;

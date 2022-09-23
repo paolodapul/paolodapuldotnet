@@ -3,38 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Heebo-Bold";
-  src: url("../public/fonts/Heebo-Bold.ttf");
+  font-family: 'Inter-Regular';
+  src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 }
 
 @font-face {
-  font-family: "Heebo-Medium";
-  src: url("../public/fonts/Heebo-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Heebo-Regular";
-  src: url("../public/fonts/Heebo-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Heebo-Light";
-  src: url("../public/fonts/Heebo-Light.ttf");
-}
-
-@font-face {
-  font-family: "Heebo-ExtraLight";
-  src: url("../public/fonts/Heebo-ExtraLight.ttf");
-}
-
-@font-face {
-  font-family: "Inter-Regular";
-  src: url("../public/fonts/Inter-Regular.woff2");
-}
-
-@font-face {
-  font-family: "Inter-Light";
-  src: url("../public/fonts/Inter-Light.woff2");
+  font-family: 'Inter-Light';
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 }
 
 html,

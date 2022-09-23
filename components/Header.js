@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
 export default function Header({ className: classes }) {
   return (
@@ -6,12 +6,12 @@ export default function Header({ className: classes }) {
       <div>
         <Link href="/" passHref>
           <a>
-            <h1 className="text-3xl font-bold text-slate-700 tracking-tight font-heebo_bold">
+            <h1 className="text-3xl font-bold text-slate-700 tracking-tight font-inter_regular">
               Paolo Dapul
             </h1>
           </a>
         </Link>
       </div>
     </header>
-  );
+  )
 }

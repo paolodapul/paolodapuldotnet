@@ -2,18 +2,18 @@ import Link from 'next/link'
 
 export default function Post({ post }) {
   return (
-    <div className=" lg:w-auto mb-12">
+    <div className="mb-12">
       <Link href={`/blog/${post.slug}`}>
         <a>
-          <h1 className="text-zinc-900 font-inter_regular text-3xl font-medium mb-2 leading-9">
+          <h1 className="text-stone-300 font-inter_light font-bold text-2xl mb-2 leading-9 tracking-normal">
             {post.frontMatter.title}
           </h1>
         </a>
       </Link>
-      <div className="font-inter_regular text-base text-slate-700 leading-relaxed mb-2">
+      <div className="font-inter_light font-light text-base text-stone-50 leading-relaxed mb-2">
         {post.frontMatter.excerpt}
       </div>
-      <div className="text-sm text-slate-500">{post.frontMatter.date}</div>
+      <div className="text-sm text-stone-500">{post.frontMatter.date}</div>
     </div>
   )
 }

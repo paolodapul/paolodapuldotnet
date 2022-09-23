@@ -1,21 +1,30 @@
-import Header from '@components/Header';
+import Header from '@components/Header'
 import '../styles/globals.css'
-import Maintenance from '@components/Maintenance';
+import Maintenance from '@components/Maintenance'
+import Main from '@components/Main'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
-
-  if (process.env.MAINTENANCE === 'true') {
-    return <Maintenance />
-  } 
+  // if (process.env.MAINTENANCE === 'true') {
+  //   return <Maintenance />
+  // }
 
   return (
-    <div className='container my-16 mx-auto lg:w-2/5 2xl:w-2/5'>
+    <>
+      <Head>
+        <title>Paolo Dapul</title>
+        <meta
+          name="description"
+          content="I write about programming and software development."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header className="font-sans" />
-      <main>
+      <Main>
         <Component {...pageProps} />
-      </main>
-    </div>
-  );
+      </Main>
+    </>
+  )
 }
 
-export default MyApp;
+export default MyApp

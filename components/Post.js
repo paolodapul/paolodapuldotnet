@@ -5,7 +5,7 @@ export default function Post({ post }) {
     <div className="mb-12">
       <Link href={`/blog/${post.slug}`}>
         <a>
-          <h1 className="text-stone-300 font-inter_light font-bold text-2xl mb-2 leading-9 tracking-normal">
+          <h1 className="text-stone-300 font-inter_light font-bold text-3xl mb-2 leading-9 tracking-normal">
             {post.frontMatter.title}
           </h1>
         </a>

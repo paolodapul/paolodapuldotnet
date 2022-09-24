@@ -1,8 +1,3 @@
-# paolodapul.net redesign
+# paolodapul.net 2.0
 
-My WordPress blog will be migrated to this Next.js project. I redesigned my blog since I'm not happy with WP. I also built this for the following:
-
-- Faster load speeds
-- Easier design tweaks
-- Easier configuration
-- Backend-less blogging
+Repository of my new blogging platform, powered by Next.js and Vercel.

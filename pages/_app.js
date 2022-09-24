@@ -5,9 +5,9 @@ import Main from '@components/Main'
 import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
-  // if (process.env.MAINTENANCE === 'true') {
-  //   return <Maintenance />
-  // }
+  if (process.env.MAINTENANCE === 'true') {
+    return <Maintenance />
+  }
 
   return (
     <>

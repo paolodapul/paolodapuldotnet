@@ -1,6 +1,6 @@
 export default function Main({ children }) {
   return (
-    <main className="antialiased container mx-auto lg:w-3/6 2xl:w-3/6 py-20">
+    <main className="antialiased container mx-auto lg:w-2/5 2xl:w-2/5 py-20">
       {children}
     </main>
   )

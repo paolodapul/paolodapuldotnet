@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   env: {
-    // MAINTENANCE: process.env.MAINTENANCE
+    MAINTENANCE: process.env.MAINTENANCE,
   },
 }

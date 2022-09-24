@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   return (
@@ -15,21 +16,27 @@ export default function Header() {
               </span>
             </a>
           </Link>
-          <ul className="flex w-64 justify-between items-center text-base text-stone-300">
+          <ul className="flex w-32 justify-between items-center text-base text-stone-300">
             <li>
-              <Link href="/" passHref>
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/" passHref>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link href="/" passHref>
+              <Link href="/about" passHref>
                 About
               </Link>
+            </li>
+            <li>
+              <a
+                className="flex"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/paolodapul"
+              >
+                <Image
+                  className="bg-stone-200 rounded"
+                  src="/github.svg"
+                  height={30}
+                  width={30}
+                  alt="GitHub icon"
+                />
+              </a>
             </li>
           </ul>
         </div>

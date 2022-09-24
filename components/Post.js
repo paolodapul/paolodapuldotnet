@@ -10,7 +10,7 @@ export default function Post({ post }) {
           </h1>
         </a>
       </Link>
-      <div className="font-inter_light font-light text-base text-stone-50 leading-relaxed mb-2">
+      <div className="font-inter_light text-base text-stone-50 leading-relaxed mb-8">
         {post.frontMatter.excerpt}
       </div>
       <div className="text-sm text-stone-500">{post.frontMatter.date}</div>

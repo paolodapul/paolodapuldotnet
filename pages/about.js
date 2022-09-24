@@ -6,7 +6,7 @@ export default function About() {
       <p>{`I write a lot of my thoughts down all the time, usually just to myself, but here, I'm going to dump my knowledge on things I learned, showing it to the world to make it useful (hopefully) to my fellow developers and enthusiasts. Being able to freely share and consume information over the web is one of the nicest things I like about life, because this fuels our joy of learning.`}</p>
       <p>{`I'm a software developer, working usually on web stuff. I'm very much of a generalist when it comes to technologies, working with a variety of tech stacks throughout the span of my existence, but I prefer TypeScript, React and Node.js these days.`}</p>
       <p>
-        {`If you'd like to know more about what I've been doing with my work life, you can check my`}{' '}
+        {`If you'd like to know more about what I've been doing with my work life and to see how I look like, you can check my`}{' '}
         <a
           className="no-underline text-sky-300"
           target="_blank"

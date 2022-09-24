@@ -1,7 +1,7 @@
 ---
 title: 'Revamped my site.'
 date: 'September 24, 2022'
-excerpt: 'I moved my site from shared web hosted WordPress to Vercel, and re-created the application with Next.js. Also, a few other updates.'
+excerpt: 'I moved my site from WordPress to Vercel, and re-built everything with Next.js. Also, a few other updates.'
 ---
 
 ## How the move started

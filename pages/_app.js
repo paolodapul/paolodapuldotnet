@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import Maintenance from '@components/Maintenance'
 import Main from '@components/Main'
 import Head from 'next/head'
+import Footer from '@components/Footer'
 
 function MyApp({ Component, pageProps }) {
   if (process.env.MAINTENANCE === 'true') {
@@ -10,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   }
 
   return (
-    <>
+    <div className="scroll-smooth">
       <Head>
         <title>Paolo Dapul</title>
         <meta
@@ -23,7 +24,8 @@ function MyApp({ Component, pageProps }) {
       <Main>
         <Component {...pageProps} />
       </Main>
-    </>
+      <Footer />
+    </div>
   )
 }
 

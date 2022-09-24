@@ -6,7 +6,7 @@ import { sortByDate, getPostKey } from '../utils'
 
 export default function Home({ posts }) {
   return (
-    <div className="posts">
+    <div className="posts h-screen">
       {posts.map((post) => (
         <Post key={getPostKey(post.frontMatter.title)} post={post} />
       ))}

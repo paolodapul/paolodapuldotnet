@@ -6,8 +6,14 @@ import Link from 'next/link'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark.css'
 
+const renderer = new marked.Renderer()
+renderer.link = function (href, title, text) {
+  const link = marked.Renderer.prototype.link.call(this, href, title, text)
+  return link.replace('<a', "<a target='_blank' ")
+}
+
 marked.setOptions({
-  renderer: new marked.Renderer(),
+  renderer,
   highlight: function (code, lang) {
     const language = hljs.getLanguage(lang) ? lang : 'plaintext'
     return hljs.highlight(code, { language }).value
@@ -17,13 +23,16 @@ marked.setOptions({
 
 export default function PostPage({ frontMatter: { title, date }, content }) {
   return (
-    <div id="post-page">
-      <h1 className="text-stone-100 font-inter_light font-bold text-5xl mb-2">
+    <div
+      id="post-page"
+      className="-ml-16 pl-16 border-double border-stone-500 border-l-2"
+    >
+      <h1 className="text-stone-100 font-inter_light font-bold text-3xl mb-2">
         {title}
       </h1>
-      <div className="text-sm text-stone-500">{date}</div>
+      <div className="text-sm text-stone-300">{date}</div>
       <div
-        className="text-base text-stone-100 py-8 prose prose-invert leading-relaxed prose-pre:p-0"
+        className="text-base text-stone-100 py-16 prose prose-invert leading-relaxed prose-pre:p-0"
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       ></div>
     </div>

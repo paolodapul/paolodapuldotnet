@@ -1,21 +1,32 @@
-import Header from '@components/Header';
+import Header from '@components/Header'
 import '../styles/globals.css'
-import Maintenance from '@components/Maintenance';
+import Maintenance from '@components/Maintenance'
+import Main from '@components/Main'
+import Head from 'next/head'
+import Footer from '@components/Footer'
 
 function MyApp({ Component, pageProps }) {
-
   if (process.env.MAINTENANCE === 'true') {
     return <Maintenance />
-  } 
+  }
 
   return (
-    <div className='container my-16 mx-auto lg:w-2/5 2xl:w-2/5'>
+    <div className="scroll-smooth">
+      <Head>
+        <title>Paolo Dapul</title>
+        <meta
+          name="description"
+          content="I write about programming and software development."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header className="font-sans" />
-      <main>
+      <Main>
         <Component {...pageProps} />
-      </main>
+      </Main>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

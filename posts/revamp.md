@@ -24,7 +24,7 @@ This is also how code snippets will look like. The theme may change from time to
 
 ```javascript
 function hello() {
-  return 'Hi'
+  return 'Hi';
 }
 ```
 
@@ -34,7 +34,7 @@ Most of my activity at work and during my personal time were about React, TypeSc
 
 I also suggested to my team that we use Parcel 2 and move away from Create React App. The performance gain for using the SWC-powered bundler helped with productivity, and it was evident when we started using it in a prototype application for a client. The community support and available Stack Overflow answers wasn't on par with Webpack but nevertheless, the move we did was worth it.
 
-I also tried creating small (and mostly unfinished) starter templates for personal use: [React + TypeScript + Vite Starter](https://github.com/paolodapul/react-ts), and [Node Starter](https://github.com/paolodapul/node-starter). My most complex attempt so far with regard to all these boilerplate craziness is [Owl](https://github.com/paolodapul/owl) - a full-stack TypeScript monorepo, and my goal for building it is to create an end-to-end type-checked application, to cure all my pent-up frustrations about object property mismatches from backend to frontend and vice-versa. _Side note: I think I developed quite an obsession with type-checking when I started using TypeScript._
+I also tried creating small (and mostly unfinished) starter templates for personal use: [Stork](https://github.com/paolodapul/stork), and [Bear](https://github.com/paolodapul/bear). My most complex attempt so far with regard to all these boilerplate craziness is [Owl](https://github.com/paolodapul/owl) - a full-stack TypeScript monorepo, and my goal for building it is to create an end-to-end type-checked application, to cure all my pent-up frustrations about object property mismatches from backend to frontend and vice-versa. _Side note: I think I developed quite an obsession with type-checking when I started using TypeScript._
 
 I know that these boilerplates were already created by great developers out there, and I know that a lot of their implementations are way better, it's just that I wanted to gain first-hand experience on what it's really like building a boilerplate from scratch. The learning experience may also help me get my way around the code bases easier in the future. It's always fun learning new things as well.
 

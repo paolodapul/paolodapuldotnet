@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -8,10 +8,10 @@ export default function Header() {
         <div className="text-2xl py-8 flex justify-between items-center">
           <Link href="/" passHref>
             <a>
-              <span className="font-inter_light font-thin tracking-wide text-stone-200">
+              <span className="font-thin tracking-tight text-stone-200">
                 paolo
               </span>
-              <span className="font-inter_regular font-normal tracking-wide text-stone-400">
+              <span className="font-normal tracking-tight text-stone-400">
                 dapul
               </span>
             </a>
@@ -42,5 +42,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }

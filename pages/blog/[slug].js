@@ -27,7 +27,7 @@ export default function PostPage({ frontMatter: { title, date }, content }) {
       id="post-page"
       className="-ml-16 pl-16 border-double border-stone-500 border-l-2"
     >
-      <h1 className="text-stone-100 font-bold tracking-tight text-3xl mb-2">
+      <h1 className="text-stone-100 font-bold tracking-normal text-3xl mb-2">
         {title}
       </h1>
       <div className="text-sm text-stone-300">{date}</div>

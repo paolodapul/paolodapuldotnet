@@ -8,7 +8,7 @@ export default function Header() {
         <div className="text-2xl py-8 flex justify-between items-center">
           <Link href="/" passHref>
             <a>
-              <span className="font-thin tracking-tight text-stone-200">
+              <span className="font-light tracking-tight text-stone-200">
                 paolo
               </span>
               <span className="font-normal tracking-tight text-stone-400">

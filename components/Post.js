@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Post({ post }) {
   return (
-    <div className="-ml-16 mb-12 pl-16 border-double border-stone-500 border-l-2">
+    <div className="mb-12">
       <Link href={`/blog/${post.slug}`}>
         <a>
           <h1 className="text-stone-100 font-bold text-3xl mb-2 leading-9 tracking-normal">

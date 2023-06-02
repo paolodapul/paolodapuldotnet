@@ -23,10 +23,8 @@ marked.setOptions({
 
 export default function PostPage({ frontMatter: { title, date }, content }) {
   return (
-    <div
-      id="post-page"
-      className="-ml-16 pl-16 border-double border-stone-500 border-l-2"
-    >
+    <div id="post-page" className="-ml-16 pl-16 relative">
+      <div className="-ml-16 bg-gradient-to-r from-blue-400 to-emerald-400 w-1 h-full rounded-md absolute"></div>
       <h1 className="text-stone-100 font-bold tracking-normal text-3xl mb-2">
         {title}
       </h1>

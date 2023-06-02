@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="container antialiased mx-auto lg:w-3/6 2xl:w-3/6">
+    <header className="container antialiased mx-auto px-8 lg:px-auto lg:w-3/6 2xl:w-3/6">
       <div>
         <div className="text-2xl py-8 flex justify-between items-center">
           <Link href="/" passHref>

@@ -1,15 +1,14 @@
-import Header from '@components/Header'
-import '../styles/globals.css'
-import Maintenance from '@components/Maintenance'
-import Main from '@components/Main'
-import Head from 'next/head'
-import Footer from '@components/Footer'
+import Header from '@components/Header';
+import '../styles/globals.css';
+import Maintenance from '@components/Maintenance';
+import Main from '@components/Main';
+import Head from 'next/head';
+import Footer from '@components/Footer';
 import { Analytics } from '@vercel/analytics/react';
-
 
 function MyApp({ Component, pageProps }) {
   if (process.env.MAINTENANCE === 'true') {
-    return <Maintenance />
+    return <Maintenance />;
   }
 
   return (
@@ -29,7 +28,7 @@ function MyApp({ Component, pageProps }) {
       </Main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

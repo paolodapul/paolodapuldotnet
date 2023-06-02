@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -29,11 +28,9 @@ export default function Header() {
                 rel="noreferrer"
                 href="https://github.com/paolodapul"
               >
-                <Image
-                  className="bg-stone-200 rounded"
+                <img
                   src="/github.svg"
-                  height={30}
-                  width={30}
+                  className="w-8 h-8 bg-stone-200 rounded"
                   alt="GitHub icon"
                 />
               </a>

@@ -4,6 +4,8 @@ import Maintenance from '@components/Maintenance'
 import Main from '@components/Main'
 import Head from 'next/head'
 import Footer from '@components/Footer'
+import { Analytics } from '@vercel/analytics/react';
+
 
 function MyApp({ Component, pageProps }) {
   if (process.env.MAINTENANCE === 'true') {
@@ -23,6 +25,7 @@ function MyApp({ Component, pageProps }) {
       <Header className="font-sans" />
       <Main>
         <Component {...pageProps} />
+        <Analytics />
       </Main>
       <Footer />
     </div>

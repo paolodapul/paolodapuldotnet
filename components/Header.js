@@ -5,7 +5,7 @@ export default function Header() {
     <header className="container antialiased mx-auto px-8 lg:px-auto lg:w-3/6 2xl:w-3/6">
       <div>
         <div className="text-2xl py-8 flex justify-between items-center">
-          <Link href="/" passHref>
+          <Link href="/" passHref legacyBehavior>
             <a>
               <span className="font-light tracking-tight text-stone-200">
                 paolo
@@ -17,7 +17,7 @@ export default function Header() {
           </Link>
           <ul className="flex w-32 justify-between items-center text-base text-stone-300">
             <li>
-              <Link href="/about" passHref>
+              <Link href="/about" passHref legacyBehavior>
                 About
               </Link>
             </li>

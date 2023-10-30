@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Post({ post }) {
   return (
     <div className="mb-12 relative">
-      <Link href={`/blog/${post.slug}`}>
+      <Link href={`/blog/${post.slug}`} legacyBehavior>
         <a>
           <h1 className="text-stone-100 font-bold text-xl leading-9 tracking-normal">
             {post.frontMatter.title}

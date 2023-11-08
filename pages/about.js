@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="prose prose-invert">
+    <div className="prose prose-invert mx-auto w-11/12">
       <h1 className="text-5xl text-stone-100">{`Hi, I'm Paolo.`}</h1>
       <hr />
       <p>{`I write down a lot of my thoughts all the time, usually just for myself, but here, I'm going to share my knowledge on the things I've learned, showcasing it to the world to hopefully make it useful for my fellow developers and enthusiasts. Being able to freely share and consume information over the web is one of the things I love about life because it fuels our joy of learning.`}</p>

@@ -23,13 +23,13 @@ marked.setOptions({
 
 export default function PostPage({ frontMatter: { title, date }, content }) {
   return (
-    <div id="post-page" className="-ml-16 pl-16 relative">
+    <div id="post-page" className="mx-auto w-full">
       <h1 className="text-stone-100 font-bold tracking-normal text-3xl mb-2">
         {title}
       </h1>
       <div className="text-sm text-stone-300">{date}</div>
       <div
-        className="text-base font-normal text-stone-100 py-16 prose prose-invert leading-relaxed prose-pre:p-0"
+        className="text-base font-normal text-stone-100 py-16 prose prose-invert leading-relaxed prose-pre:p-0 max-w-full"
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       ></div>
     </div>

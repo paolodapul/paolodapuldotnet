@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function About() {
   return (
     <div className="prose prose-invert mx-auto w-11/12">

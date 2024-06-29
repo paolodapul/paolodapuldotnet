@@ -5,11 +5,9 @@ import Main from '@components/Main';
 import Head from 'next/head';
 import Footer from '@components/Footer';
 import { Analytics } from '@vercel/analytics/react';
-import { Inter } from 'next/font/google';
+import type { AppProps } from 'next/app';
 
-const inter = Inter({ subsets: ['latin'] });
-
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   if (process.env.MAINTENANCE === 'true') {
     return <Maintenance />;
   }
@@ -24,8 +22,8 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header className="font-sans" />
-      <Main className={inter.className}>
+      <Header />
+      <Main>
         <Component {...pageProps} />
         <Analytics />
       </Main>

@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import React from 'react';
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
-    <header className="container antialiased mx-auto px-8 lg:px-auto lg:w-3/6 2xl:w-3/6">
+    <header
+      className="
+        font-sans container antialiased mx-auto px-8 lg:px-auto lg:w-3/6 2xl:w-3/6"
+    >
       <div>
         <div className="text-2xl py-8 flex justify-between items-center">
           <Link href="/" passHref legacyBehavior>
@@ -42,4 +46,6 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

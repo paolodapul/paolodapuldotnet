@@ -2,9 +2,19 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Post from '@components/Post';
+``;
 import { sortByDate, getPostKey } from '../utils';
 
-export default function Home({ posts }) {
+type PostType = {
+  frontMatter: {
+    title: string;
+    slug: string;
+    excerpt: string;
+    date: string;
+  };
+};
+
+export default function Home({ posts }: { posts: PostType[] }) {
   return (
     <div className="posts h-screen mx-auto w-full">
       {posts.map((post) => (

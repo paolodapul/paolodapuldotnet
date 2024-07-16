@@ -5,32 +5,19 @@ export default function About() {
     <div className="prose prose-invert mx-auto w-11/12">
       <h1 className="text-5xl text-stone-100">{`Hi, I'm Paolo.`}</h1>
       <hr />
-      <p>{`I write down a lot of my thoughts all the time, usually just for myself, but here, I'm going to share my knowledge on the things I've learned, showcasing it to the world to hopefully make it useful for my fellow developers and enthusiasts. Being able to freely share and consume information over the web is one of the things I love about life because it fuels our joy of learning.`}</p>
-      <p>{`I'm a software developer, primarily working on web-related projects. I consider myself a generalist when it comes to technologies, having worked with a variety of tech stacks throughout my existence.`}</p>
+      <p>{`I have close to 8 years of software engineering experience building and maintaining enterprise web applications. I am a front-end focused full-stack engineer, specialized in React.js and its surrounding ecosystem.`}</p>
+      <p>{`
+      My personal mantra in software development is to always bring value through effective engineering practices whilst being able to ship production-grade products with speed and reliability. I also believe that strong engineering is backed by having a constant desire to learn and improve, by caring deeply about the product and its users, and by being a kind and competent colleague.
+      `}</p>
       <p>
-        {`If you'd like to know more about my work and see what I look like, you can check out my`}{' '}
-        <a
-          className="no-underline text-sky-300"
-          target="_blank"
-          rel="noreferrer"
-          href="https://linkedin.com/in/paolodapul"
-        >
-          LinkedIn profile
-        </a>{' '}
-        {`- it's pretty updated. If you're interested in seeing how I write code, you can find my `}
-        <a
-          className="no-underline text-sky-300"
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/paolodapul"
-        >
-          GitHub profile
-        </a>
-        {` here.`}
+        {`
+        As of 2024, I am immersed in the JavaScript ecosystem, and use the following tools on a day-to-day basis: React.js, TypeScript, Vite, Tailwind CSS, Next.js, GraphQL, Storybook.js. My testing stack includes React Testing Library, Vitest and Playwright. With regard to infrastructure, I deploy things to Vercel and Amazon Web Services, but I very much prefer using automated and managed services for the infrastructure side of things.
+        `}
       </p>
+      <p>{`You can reach me out at hello@paolodapul.net if you want to talk!`}</p>
       <div className="text-right mt-24">
         <em>
-          Last updated: {new Date('10/01/2023').toLocaleDateString('en-PH')}
+          Last updated: {new Date('07/16/2024').toLocaleDateString('en-PH')}
         </em>
       </div>
       <hr />

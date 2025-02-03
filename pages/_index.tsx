@@ -25,6 +25,9 @@ export default function Home({ posts }: { posts: PostType[] }) {
 }
 
 export async function getStaticProps() {
+
+  return { notFound: true };
+
   const files = fs.readdirSync(path.join('posts'));
   const posts = files.map((filename) => {
     const slug = filename.replace('.md', '');
